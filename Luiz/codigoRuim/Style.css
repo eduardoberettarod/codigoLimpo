@@ -1,0 +1,17 @@
+/* CSS simples mas sem organização nem variáveis */
+body {
+    background: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  

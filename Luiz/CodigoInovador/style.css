@@ -1,0 +1,72 @@
+:root {
+    /* Cores principais */
+    --bg-claro: #ffffff;
+    --texto-claro: #111111;
+    --bg-escuro: #121212;
+    --texto-escuro: #f1f1f1;
+  
+    /* Cores de destaque */
+    --azul: #007bff;
+    --azul-hover: #0056b3;
+  
+    /* Animação */
+    --transicao: all 0.4s ease;
+  }
+  
+  * {
+    box-sizing: border-box;
+    transition: var(--transicao);
+  }
+  
+  body {
+    margin: 0;
+    padding: 40px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--bg-claro);
+    color: var(--texto-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  .descricao {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--azul);
+    color: white;
+    transition: var(--transicao);
+  }
+  
+  button:hover {
+    background-color: var(--azul-hover);
+    transform: scale(1.05);
+  }
+  
+  /* Tema escuro */
+  .modo-escuro {
+    background-color: var(--bg-escuro);
+    color: var(--texto-escuro);
+  }
+  
+  .modo-escuro button {
+    background-color: #444;
+  }
+  
+  .modo-escuro button:hover {
+    background-color: #666;
+  }
+  

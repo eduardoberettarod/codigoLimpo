@@ -1,0 +1,50 @@
+:root {
+    --bg-light: #ffffff;
+    --text-light: #111827;
+    --bg-dark: #0f1724;
+    --text-dark: #f8fafc;
+  
+    --accent: #0b74de;
+    --radius: 8px;
+  }
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background-color 250ms ease, color 250ms ease;
+  }
+  
+  .container {
+    max-width: 720px;
+    margin: 60px auto;
+    padding: 24px;
+    text-align: center;
+  }
+  
+  .header .subtitle { color: #574d4d; margin-top: 6px; }
+  
+  .controls { margin-top: 20px; }
+  
+  button {
+    padding: 10px 18px;
+    border-radius: var(--radius);
+    border: none;
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 120ms ease, background 120ms ease;
+  }
+  
+  button:active { transform: translateY(1px); }
+  
+  /* estado escuro aplicado pela classe no <body> */
+  .theme-dark {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
